@@ -1,0 +1,3 @@
+/home/vishu/Documents/Document/Compiler/dead/build/CMakeFiles/dead.dir
+/home/vishu/Documents/Document/Compiler/dead/build/CMakeFiles/edit_cache.dir
+/home/vishu/Documents/Document/Compiler/dead/build/CMakeFiles/rebuild_cache.dir

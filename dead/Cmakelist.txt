@@ -1,7 +1,0 @@
-cmake_minimum_requirement(version 3.20)
-
-project(Dead)
-
-set(cMake_CXX_STANDARD 20)
-
-add_executable(dead src/main.cpp)
