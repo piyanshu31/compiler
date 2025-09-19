@@ -210,6 +210,46 @@ CMakeFiles/dead.dir/src/main.cpp.o: /home/vishu/Documents/Document/Compiler/dead
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
 
+dead: /usr/lib/Scrt1.o \
+  /usr/lib/crti.o \
+  /usr/lib/crtn.o \
+  /usr/lib/libc.so \
+  /usr/lib/libgcc_s.so \
+  /usr/lib/libgcc_s.so.1 \
+  /usr/lib/libm.so \
+  /usr/lib/libstdc++.so \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a \
+  /usr/lib/ld-linux-x86-64.so.2 \
+  /usr/lib/libc.so.6 \
+  /usr/lib/libc_nonshared.a \
+  /usr/lib/libm.so.6 \
+  /usr/lib/libmvec.so.1 \
+  CMakeFiles/dead.dir/src/main.cpp.o
+
+
+/usr/lib/libm.so.6:
+
+/usr/lib/libc.so.6:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
+
+/usr/lib/libstdc++.so:
+
+/usr/lib/libm.so:
+
+/usr/lib/libgcc_s.so.1:
+
+/usr/lib/libgcc_s.so:
+
+/usr/lib/libc.so:
+
+/usr/lib/crtn.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h:
 
@@ -236,6 +276,8 @@ CMakeFiles/dead.dir/src/main.cpp.o: /home/vishu/Documents/Document/Compiler/dead
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h:
+
+/usr/lib/libmvec.so.1:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
 
@@ -417,11 +459,15 @@ CMakeFiles/dead.dir/src/main.cpp.o: /home/vishu/Documents/Document/Compiler/dead
 
 /usr/include/bits/types/clock_t.h:
 
+/usr/lib/libc_nonshared.a:
+
 /usr/include/c++/15.2.1/bits/ranges_cmp.h:
 
 /usr/include/c++/15.2.1/bits/basic_ios.h:
 
 /usr/include/bits/struct_mutex.h:
+
+/usr/lib/crti.o:
 
 /usr/include/c++/15.2.1/numbers:
 
@@ -495,6 +541,8 @@ CMakeFiles/dead.dir/src/main.cpp.o: /home/vishu/Documents/Document/Compiler/dead
 
 /usr/include/c++/15.2.1/bits/char_traits.h:
 
+/usr/lib/Scrt1.o:
+
 /usr/include/bits/types/timer_t.h:
 
 /usr/include/c++/15.2.1/backward/binders.h:
@@ -555,6 +603,8 @@ CMakeFiles/dead.dir/src/main.cpp.o: /home/vishu/Documents/Document/Compiler/dead
 
 /usr/include/c++/15.2.1/bits/exception_ptr.h:
 
+/usr/lib/ld-linux-x86-64.so.2:
+
 /usr/include/c++/15.2.1/cstdio:
 
 /usr/include/c++/15.2.1/bits/istream.tcc:
@@ -608,6 +658,8 @@ CMakeFiles/dead.dir/src/main.cpp.o: /home/vishu/Documents/Document/Compiler/dead
 /usr/include/gnu/stubs-64.h:
 
 /usr/include/c++/15.2.1/bits/std_abs.h:
+
+CMakeFiles/dead.dir/src/main.cpp.o:
 
 /usr/include/bits/sched.h:
 
