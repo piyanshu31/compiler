@@ -1,0 +1,7 @@
+cmake_minimum_version(VERSION 3.20)
+
+project(started)
+
+set(CMAKE_CXX_STANDARD 20)
+
+add_executable(started src/main.cpp)

@@ -88,6 +88,7 @@ CMakeFiles/dead.dir/src/main.cpp.o: /home/vishu/Documents/Document/Compiler/dead
   /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
   /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/15.2.1/bits/enable_special_members.h \
   /usr/include/c++/15.2.1/bits/exception.h \
   /usr/include/c++/15.2.1/bits/exception_defines.h \
   /usr/include/c++/15.2.1/bits/exception_ptr.h \
@@ -125,12 +126,15 @@ CMakeFiles/dead.dir/src/main.cpp.o: /home/vishu/Documents/Document/Compiler/dead
   /usr/include/c++/15.2.1/bits/sstream.tcc \
   /usr/include/c++/15.2.1/bits/std_abs.h \
   /usr/include/c++/15.2.1/bits/stl_algobase.h \
+  /usr/include/c++/15.2.1/bits/stl_bvector.h \
   /usr/include/c++/15.2.1/bits/stl_construct.h \
   /usr/include/c++/15.2.1/bits/stl_function.h \
   /usr/include/c++/15.2.1/bits/stl_iterator.h \
   /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/15.2.1/bits/stl_pair.h \
+  /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
+  /usr/include/c++/15.2.1/bits/stl_vector.h \
   /usr/include/c++/15.2.1/bits/streambuf.tcc \
   /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/15.2.1/bits/string_view.tcc \
@@ -138,6 +142,7 @@ CMakeFiles/dead.dir/src/main.cpp.o: /home/vishu/Documents/Document/Compiler/dead
   /usr/include/c++/15.2.1/bits/uses_allocator.h \
   /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
   /usr/include/c++/15.2.1/bits/utility.h \
+  /usr/include/c++/15.2.1/bits/vector.tcc \
   /usr/include/c++/15.2.1/bits/version.h \
   /usr/include/c++/15.2.1/cctype \
   /usr/include/c++/15.2.1/cerrno \
@@ -165,6 +170,7 @@ CMakeFiles/dead.dir/src/main.cpp.o: /home/vishu/Documents/Document/Compiler/dead
   /usr/include/c++/15.2.1/istream \
   /usr/include/c++/15.2.1/new \
   /usr/include/c++/15.2.1/numbers \
+  /usr/include/c++/15.2.1/optional \
   /usr/include/c++/15.2.1/ostream \
   /usr/include/c++/15.2.1/pstl/pstl_config.h \
   /usr/include/c++/15.2.1/sstream \
@@ -176,6 +182,7 @@ CMakeFiles/dead.dir/src/main.cpp.o: /home/vishu/Documents/Document/Compiler/dead
   /usr/include/c++/15.2.1/tuple \
   /usr/include/c++/15.2.1/type_traits \
   /usr/include/c++/15.2.1/typeinfo \
+  /usr/include/c++/15.2.1/vector \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
@@ -258,8 +265,6 @@ dead: /usr/lib/Scrt1.o \
 
 /usr/lib/crtn.o:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h:
-
 /usr/include/sys/single_threaded.h:
 
 /usr/include/sys/select.h:
@@ -310,11 +315,11 @@ dead: /usr/lib/Scrt1.o \
 
 /usr/include/c++/15.2.1/string:
 
-/usr/include/c++/15.2.1/stdexcept:
-
 /usr/include/c++/15.2.1/sstream:
 
 /usr/include/c++/15.2.1/iostream:
+
+/usr/include/c++/15.2.1/optional:
 
 /usr/include/c++/15.2.1/iosfwd:
 
@@ -325,10 +330,6 @@ dead: /usr/lib/Scrt1.o \
 /usr/include/c++/15.2.1/ext/numeric_traits.h:
 
 /usr/include/c++/15.2.1/ext/alloc_traits.h:
-
-/usr/include/errno.h:
-
-/usr/include/c++/15.2.1/exception:
 
 /usr/include/c++/15.2.1/new:
 
@@ -350,6 +351,10 @@ dead: /usr/lib/Scrt1.o \
 
 /usr/include/c++/15.2.1/bits/version.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h:
+
+/usr/include/c++/15.2.1/bits/vector.tcc:
+
 /usr/include/c++/15.2.1/bits/utility.h:
 
 /usr/include/c++/15.2.1/bits/uses_allocator_args.h:
@@ -362,7 +367,17 @@ dead: /usr/lib/Scrt1.o \
 
 /usr/include/c++/15.2.1/bits/streambuf_iterator.h:
 
+/usr/include/errno.h:
+
+/usr/include/c++/15.2.1/exception:
+
+/usr/include/c++/15.2.1/bits/stl_vector.h:
+
+/usr/include/c++/15.2.1/bits/stl_uninitialized.h:
+
 /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/15.2.1/bits/stl_iterator.h:
 
 /usr/include/bits/types/struct_sched_param.h:
 
@@ -385,8 +400,6 @@ dead: /usr/lib/Scrt1.o \
 /usr/include/bits/atomic_wide_counter.h:
 
 /usr/include/c++/15.2.1/bits/basic_string.h:
-
-/usr/include/c++/15.2.1/bits/stl_iterator.h:
 
 /usr/include/bits/types/__FILE.h:
 
@@ -572,6 +585,12 @@ dead: /usr/lib/Scrt1.o \
 
 /usr/include/c++/15.2.1/backward/binders.h:
 
+/usr/include/c++/15.2.1/vector:
+
+/usr/include/c++/15.2.1/stdexcept:
+
+/usr/include/c++/15.2.1/bits/enable_special_members.h:
+
 /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/15.2.1/bits/ios_base.h:
@@ -587,6 +606,8 @@ dead: /usr/lib/Scrt1.o \
 /usr/include/c++/15.2.1/cctype:
 
 /usr/include/c++/15.2.1/bits/hash_bytes.h:
+
+/usr/include/c++/15.2.1/bits/stl_bvector.h:
 
 /usr/include/c++/15.2.1/bits/locale_facets.tcc:
 
@@ -629,6 +650,14 @@ dead: /usr/lib/Scrt1.o \
 /usr/include/c++/15.2.1/bits/stl_construct.h:
 
 /usr/include/c++/15.2.1/bits/fstream.tcc:
+
+/usr/include/c++/15.2.1/ios:
+
+/usr/include/c++/15.2.1/bits/stl_function.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/c++/15.2.1/bits/invoke.h:
 
 /usr/lib/ld-linux-x86-64.so.2:
 
@@ -691,11 +720,3 @@ CMakeFiles/dead.dir/src/main.cpp.o:
 /usr/include/bits/sched.h:
 
 /usr/include/c++/15.2.1/bits/stl_algobase.h:
-
-/usr/include/c++/15.2.1/ios:
-
-/usr/include/bits/endian.h:
-
-/usr/include/c++/15.2.1/bits/invoke.h:
-
-/usr/include/c++/15.2.1/bits/stl_function.h:

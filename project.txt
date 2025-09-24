@@ -1,0 +1,46 @@
+// first step: check if command line interface taking the input
+#include <iostream>
+
+int main(int argc,char* argv[]){
+    std::cout << argv[1] << std::endl;
+    return 0;
+}
+
+//second step:Use the error and priviously learn thing to print only if there is one argument.
+#include <iostream>
+
+int main(int argc,char* argv[]){
+
+    if(argc != 2){ //allow to pass command line argument (cla) with only one argument or two characters i.e. 0 and 1
+        std::cerr<<"Incorrect usage, Correct usage is ...."<<std::endl;
+        std::cerr<<"dead <input.dd>"<<std::endl;
+        return EXIT_FAILURE;
+    }
+    std::cout << argv[1] << std::endl;
+    return EXIT_SUCCESS;
+}
+
+//third step:Make a box where you can store all the the thing in input file
+#include <iostream>
+#include <sstream>
+#include <fstream>
+
+int main(int argc,char* argv[]){
+
+    if(argc != 2){
+        std::cerr<<"Incorrect usage, Correct usage is ...."<<std::endl;
+        std::cerr<<"dead <input.dd>"<<std::endl;
+        return EXIT_FAILURE;
+    }
+
+    std::string contents; //This is refered as box where all content in last will be store
+    {
+        std::stringstream contents_stream; // creating a temprory stream to collect string from file
+        std::fstream input(argv[1], std::ios::in);//we take all string present in file give by user
+        contents_stream << input.rdbuf();//copy file stream buffer and put string in content stream
+        contents = contents_stream.str();//lastly pust all the value in proper string formate in box call contents.
+    }
+    std::cout << contents ;
+
+    return EXIT_SUCCESS;
+}
