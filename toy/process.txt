@@ -1,9 +1,11 @@
+Creating a lexer
+
 #include <iostream>
 #include <string>
 #include <vector>
 #include <cctype>
 
-
+// Define the types of tokens
 enum class TokenType {
     Identifier,
     Number,
@@ -14,28 +16,34 @@ enum class TokenType {
     EndOfFile
 };
 
+// Structure for a token
 struct Token {
     TokenType type;
     std::string value;
 };
 
+// The Lexer
 class Lexer {
     std::string text;
     size_t pos;
 public:
     Lexer(const std::string& input) : text(input), pos(0) {}
 
+    // Helper: get current character or '\0' if end
     char currentChar() {
         if (pos < text.size()) return text[pos];
         return '\0';
     }
 
+    // Move to next character
     void advance() { pos++; }
 
+    // Skip spaces
     void skipWhitespace() {
         while (isspace(currentChar())) advance();
     }
 
+    // Read number
     Token number() {
         std::string result;
         while (isdigit(currentChar())) {
@@ -45,6 +53,7 @@ public:
         return {TokenType::Number, result};
     }
 
+    // Read identifier (variable names)
     Token identifier() {
         std::string result;
         while (isalnum(currentChar())) {
@@ -54,6 +63,7 @@ public:
         return {TokenType::Identifier, result};
     }
 
+    // Main function: get next token
     Token getNextToken() {
         skipWhitespace();
 
@@ -74,12 +84,14 @@ public:
             case '}': advance(); return {TokenType::RBrace, "}"};
         }
 
+        // If unknown character
         std::cerr << "Unknown character: " << ch << "\n";
         advance();
         return getNextToken();
     }
 };
 
+// Quick test
 int main() {
     std::string input = "x = 3 + 4";
     Lexer lexer(input);
