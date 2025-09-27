@@ -1,4 +1,3 @@
-all: lexer
-
-lexer: lexer.cpp
-	g++ -std=c++17 lexer.cpp -o lexer
+x = 3 * (2 + 1)
+x + 4
+7.5 / 2
