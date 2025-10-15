@@ -436,7 +436,7 @@ vector<Instr> genForStmt(const unique_ptr<Expr>& stmt) {
 
 /* ------------------- Main: REPL glue ------------------- */
 int main() {
-    cout << "Toy compiler Day 7 — supports print. Enter statements; use ';' to separate. Empty line quits.\n";
+    cout << "Supports print. Enter statements; use ';' to separate. Empty line quits.\n";
     SemanticAnalyzer sem;
     VM vm;
 
