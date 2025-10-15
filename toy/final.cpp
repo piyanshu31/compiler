@@ -114,6 +114,10 @@ public:
         if (pos >= toks.size()) throw runtime_error("Parser: unexpected end");
         return toks[pos];
     }
+    Token get() {
+        if (pos >= toks.size()) throw runtime_error("Parser: unexpected end");
+        return toks[pos++];
+    }
     bool accept(TokenKind k) {
         if (pos < toks.size() && toks[pos].kind == k) { pos++; return true; }
         return false;
